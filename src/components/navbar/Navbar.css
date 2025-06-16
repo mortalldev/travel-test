@@ -1,0 +1,52 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__collection {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__login__btn {
+    text-decoration: underline;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.nav__login__btn:hover {
+    text-decoration: none;
+}
+
+.nav__menu {
+    display: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__collection {
+        display: none;
+    }
+
+    .nav__login__btns {
+        display: none;
+    }
+
+    .nav__menu {
+        display: inline-flex;
+    }
+}

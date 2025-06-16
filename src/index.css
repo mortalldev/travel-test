@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Water+Brush&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --text-color: #1e1e1e;
+    --text-color-90: #999;
+    --title-color: #cd1a40;
+    --travel-card-background: #fff9f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.title__font-family {
+    font-family: "Water Brush", sans-serif;
+}
+
+.logo__font-family {
+    font-family: "Clicker Script", sans-serif;
+    color: #ee1c45;
+    font-size: 1.9rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.primary-background {
+    background: linear-gradient(to right, var(--title-color) 0%, #ff803c 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 0.85rem;
+    font-weight: bold;
+}

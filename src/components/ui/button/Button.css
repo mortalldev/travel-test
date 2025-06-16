@@ -1,0 +1,21 @@
+.button {
+    border: none;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 1rem;
+    min-width: 95px;
+    text-align: center;
+    height: 43px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.button:hover {
+    opacity: 0.9;
+}

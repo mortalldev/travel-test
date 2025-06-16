@@ -1,0 +1,7 @@
+.section__path {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 200;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
