@@ -1,0 +1,68 @@
+.activity {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.activity__title {
+    color: var(--text-color);
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.activity__cards {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.activity__card {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: var(--travel-card-background);
+    cursor: pointer;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.activity__card:hover {
+    background: var(--travel-card-background-hover);
+}
+
+.activity__card:hover img {
+    filter: brightness(1000%);
+}
+
+.activity__card__title {
+    font-size: 2rem;
+    color: var(--text-color-90);
+}
+.activity__card:hover .activity__card__title {
+    color: #fff;
+}
+
+.activity__card__desc {
+    color: var(--text-color-90);
+}
+.activity__card:hover .activity__card__desc {
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .activity__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .activity__cards {
+        grid-template-columns: 1fr;
+    }
+}

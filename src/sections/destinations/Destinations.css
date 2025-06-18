@@ -3,84 +3,7 @@
     text-align: center;
 }
 
-.destinations__gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.gallery__left {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-}
-
-.gallery__right {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.gallery__top {
-    display: flex;
-    gap: 20px;
-}
-
-.gallery__item {
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.gallery__item:hover img {
-    transform: scale(1.05);
-}
-
-.gallery__item.large {
-    height: 100%;
-    min-height: 500px;
-}
-
-.gallery__item.small {
-    flex: 1;
-    height: 240px;
-}
-
-.gallery__item.wide {
-    height: 240px;
-    width: 100%;
-}
-
-.destination__overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    transition: background 0.3s ease;
-}
-
-.destination__overlay h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-family: "Cursive", sans-serif;
-}
-
-.destination__overlay button {
+.destination__destination__gallery__overlay button {
     background: #ff5c57;
     border: none;
     padding: 10px 20px;
@@ -93,54 +16,98 @@
     margin-top: 40px;
 }
 
-@media screen and (max-width: 1024px) {
-    .destinations__gallery {
-        grid-template-columns: 1fr;
-    }
+.destination__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-template-areas:
+        "Italy Malaysia Singapore"
+        "Italy Greece Greece";
+    height: 600px;
+    margin-top: 30px;
+}
 
-    .gallery__left,
-    .gallery__right {
-        width: 100%;
-    }
+.destination__gallery__one {
+    grid-area: Greece;
+}
 
-    .gallery__right .gallery__top {
-        flex-direction: column;
-    }
+.destination__gallery__two {
+    grid-area: Malaysia;
+}
 
-    .gallery__item.small,
-    .gallery__item.wide,
-    .gallery__item.large {
-        width: 100%;
+.destination__gallery__three {
+    grid-area: Singapore;
+}
+
+.destination__gallery__four {
+    grid-area: Italy;
+}
+
+.destination__gallery__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.destination__gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: scale 0.2s linear;
+    z-index: 1;
+    position: relative;
+}
+
+.destination__gallery__item .destination__gallery__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.destination__gallery__item:hover img {
+    scale: 1.05;
+}
+
+@media (max-width: 1024px) {
+    .destination__gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Malaysia Singapore"
+            "Greece Italy";
         height: auto;
-        min-height: 240px;
+    }
+
+    .destination__gallery__item {
+        aspect-ratio: 1 / 1;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .overlay h2 {
-        font-size: 20px;
+@media (max-width: 768px) {
+    .destination__gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Malaysia"
+            "Singapore"
+            "Greece"
+            "Italy";
     }
 
-    .overlay button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .gallery__item.small,
-    .gallery__item.wide,
-    .gallery__item.large {
-        height: 200px;
-        /* min-height: unset; */
-    }
-
-    .overlay h2 {
-        font-size: 18px;
-    }
-
-    .overlay button {
-        padding: 6px 14px;
-        font-size: 13px;
+    .destination__gallery__item {
+        aspect-ratio: 4 / 3;
     }
 }

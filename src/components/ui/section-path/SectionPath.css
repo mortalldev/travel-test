@@ -5,3 +5,14 @@
     font-size: 3rem;
     letter-spacing: 2px;
 }
+
+@media screen and (max-width: 1024px) {
+    .section__path {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section__path {
+        font-size: 2.2rem;
+    }
+}

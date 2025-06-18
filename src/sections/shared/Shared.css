@@ -1,0 +1,46 @@
+.shared {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.shared__title {
+    color: var(--text-color);
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.shared__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.shared__cards div {
+    width: 100%;
+    overflow: hidden;
+}
+.shared__cards div img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.shared__cards img:hover {
+    scale: 1.05;
+}
+
+@media screen and (max-width: 1280px) {
+    .shared__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .shared__cards {
+        grid-template-columns: 1fr;
+    }
+}

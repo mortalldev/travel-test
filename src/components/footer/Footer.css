@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    background: url("/public/footer.png") no-repeat center/cover;
+}
+
+.footer__overlay {
+    width: 100%;
+    min-height: 450px;
+    background-color: #000001a6;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    min-height: 450px;
+    justify-items: end;
+    gap: 30px;
+}
+
+.footer__logo {
+    font-family: "Clicker Script", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer__about__desc {
+    width: 100%;
+    line-height: 1.8;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.footer__social__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__social__links svg {
+    cursor: pointer;
+}
+
+.footer__about > .footer__collection,
+.footer__company > .footer__collection,
+.footer__contact > .footer__collection {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.footer__about .footer__collection > .footer__item > a,
+.footer__company .footer__collection > .footer__item > a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer__contact .footer__collection > .footer__item {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: start;
+        padding: 20px 0;
+        padding-left: 20px;
+    }
+}

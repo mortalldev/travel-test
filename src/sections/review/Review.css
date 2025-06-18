@@ -1,0 +1,93 @@
+.review {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.review__title {
+    color: var(--text-color);
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.review__wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__quotes {
+    width: 80%;
+    min-height: 200px;
+    background: var(--travel-card-background-hover);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.review__quotes::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: #ff693c transparent transparent transparent;
+    bottom: -25px;
+    left: 60%;
+}
+
+.review__quotes > img {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+}
+
+.review__quotes > p {
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 300;
+}
+
+.review__users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.review__user__selected {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review__user__selected > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+
+.review__user__selected > div h3 {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1280px) {
+    .review__quotes::after {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .review__quotes::after {
+        border-color: transparent;
+    }
+}

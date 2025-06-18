@@ -5,6 +5,11 @@
     --text-color-90: #999;
     --title-color: #cd1a40;
     --travel-card-background: #fff9f0;
+    --travel-card-background-hover: linear-gradient(
+        to right,
+        var(--title-color) 0%,
+        #ff803c 100%
+    );
 }
 
 * {
