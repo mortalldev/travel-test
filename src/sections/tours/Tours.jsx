@@ -20,7 +20,7 @@ export default function Tours() {
                     {tourPackages.map((tour) => (
                         <div key={tour.path} className="tours__card">
                             <img
-                                src={`/src/assets/tour-${tour.path}.png`}
+                                src={`/assets/tour-${tour.path}.png`}
                                 alt={tour.title}
                             />
                             <div className="tours__card__info">

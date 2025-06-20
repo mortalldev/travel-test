@@ -19,7 +19,7 @@ export default function Shared() {
                     {[1, 2, 3, 4, 5, 6].map((_, index) => (
                         <div key={index}>
                             <img
-                                src={`/src/assets/shared-${index + 1}.png`}
+                                src={`/assets/shared-${index + 1}.png`}
                                 alt={`Shared-${index}`}
                             />
                         </div>
