@@ -85,3 +85,9 @@
         font-size: 2.5rem;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .newsletter {
+        margin-top: 50px;
+    }
+}

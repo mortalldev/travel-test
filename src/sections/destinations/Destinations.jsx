@@ -24,7 +24,7 @@ export default function Destinations() {
                                 <Button label="16 TOURS" />
                             </div>
                             <img
-                                src={`/public/${tour.name.toLowerCase()}.png`}
+                                src={`/src/assets/${tour.name.toLowerCase()}.png`}
                                 alt={tour.name}
                             />
                         </div>

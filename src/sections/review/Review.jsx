@@ -18,7 +18,7 @@ export default function Review() {
                 <div className="review__wrapper">
                     <div className="review__quotes">
                         <img
-                            src="/public/review-quotes.png"
+                            src="/src/assets/review-quotes.png"
                             alt="Review Quotes"
                         />
                         <p>
@@ -34,18 +34,18 @@ export default function Review() {
                     </div>
 
                     <div className="review__users">
-                        <img src="/public/users-1.png" alt="User-1" />
-                        <img src="/public/users-2.png" alt="User-2" />
-                        <img src="/public/users-3.png" alt="User-3" />
+                        <img src="/src/assets/users-1.png" alt="User-1" />
+                        <img src="/src/assets/users-2.png" alt="User-2" />
+                        <img src="/src/assets/users-3.png" alt="User-3" />
                         <div className="review__user__selected">
-                            <img src="/public/users-4.png" alt="User-4" />
+                            <img src="/src/assets/users-4.png" alt="User-4" />
                             <div>
                                 <h3>Scarlett Thomas</h3>
                                 <p>Singapore</p>
                             </div>
                         </div>
-                        <img src="/public/users-5.png" alt="User-5" />
-                        <img src="/public/users-6.png" alt="User-6" />
+                        <img src="/src/assets/users-5.png" alt="User-5" />
+                        <img src="/src/assets/users-6.png" alt="User-6" />
                     </div>
                 </div>
             </Container>

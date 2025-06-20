@@ -6,7 +6,7 @@ export default function Newsletter() {
     return (
         <section className="newsletter">
             <img
-                src="/public/newsletter.png"
+                src="/src/assets/newsletter.png"
                 alt="Newsletter"
                 className="newsletter__building"
             />

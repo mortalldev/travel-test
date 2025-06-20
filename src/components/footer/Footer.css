@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     min-height: 450px;
-    background: url("/public/footer.png") no-repeat center/cover;
+    background: url("/src/assets/footer.png") no-repeat center/cover;
 }
 
 .footer__overlay {

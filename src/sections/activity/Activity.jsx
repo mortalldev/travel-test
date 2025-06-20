@@ -20,7 +20,7 @@ export default function Activity() {
                     {activities.map((active) => (
                         <div key={active.name} className="activity__card">
                             <img
-                                src={`/public/activity-${active.name
+                                src={`/src/assets/activity-${active.name
                                     .split(" ")
                                     .join("")
                                     .toLowerCase()}.svg`}

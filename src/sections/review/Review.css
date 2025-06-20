@@ -91,3 +91,8 @@
         border-color: transparent;
     }
 }
+@media screen and (max-width: 640px) {
+    .review__user__selected > div {
+        display: none;
+    }
+}
